@@ -54,7 +54,7 @@ function Hero() {
                     </a>
                 </span>
 
-                <p>
+                <p className={styles.description}>
                     A Full stack web developer and a tech enthusiast.
                 </p>
 
