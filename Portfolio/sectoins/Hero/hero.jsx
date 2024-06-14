@@ -1,16 +1,25 @@
-/* eslint-disable no-unused-vars */
+
 
 import styles from './HeroStyles.module.css'
+import sun from '/Users/manav/Library/CloudStorage/OneDrive-thapar.edu/Codes/Portfolio/Portfolio/src/assets/sun.svg'
+import moon from "/Users/manav/Library/CloudStorage/OneDrive-thapar.edu/Codes/Portfolio/Portfolio/src/assets/moon.svg"
+import twitterLight from '/Users/manav/Library/CloudStorage/OneDrive-thapar.edu/Codes/Portfolio/Portfolio/src/assets/twitter-light.svg'
+import twitterDark from '/Users/manav/Library/CloudStorage/OneDrive-thapar.edu/Codes/Portfolio/Portfolio/src/assets/twitter-dark.svg'
+import githubLight from '/Users/manav/Library/CloudStorage/OneDrive-thapar.edu/Codes/Portfolio/Portfolio/src/assets/github-light.svg'
+import githubDark from '/Users/manav/Library/CloudStorage/OneDrive-thapar.edu/Codes/Portfolio/Portfolio/src/assets/github-dark.svg'
+import linkedinLight from '/Users/manav/Library/CloudStorage/OneDrive-thapar.edu/Codes/Portfolio/Portfolio/src/assets/linkedin-light.svg'
+import linkedinDark from '/Users/manav/Library/CloudStorage/OneDrive-thapar.edu/Codes/Portfolio/Portfolio/src/assets/linkedin-dark.svg'
 import heroImg from '/Users/manav/Library/CloudStorage/OneDrive-thapar.edu/Codes/Portfolio/Portfolio/src/assets/heroImg.png'
-import themeIcon from '/Users/manav/Library/CloudStorage/OneDrive-thapar.edu/Codes/Portfolio/Portfolio/src/assets/sun.svg'
-import xIcon from '/Users/manav/Library/CloudStorage/OneDrive-thapar.edu/Codes/Portfolio/Portfolio/src/assets/twitter-light.svg'
-import linkedinIcon from '/Users/manav/Library/CloudStorage/OneDrive-thapar.edu/Codes/Portfolio/Portfolio/src/assets/linkedin-light.svg'
-import githubIcon from '/Users/manav/Library/CloudStorage/OneDrive-thapar.edu/Codes/Portfolio/Portfolio/src/assets/github-light.svg'
 import CV from '/Users/manav/Library/CloudStorage/OneDrive-thapar.edu/Codes/Portfolio/Portfolio/src/assets/cv.pdf'
 import {useTheme} from '/Users/manav/Library/CloudStorage/OneDrive-thapar.edu/Codes/Portfolio/Portfolio/src/common/ThemeContext.jsx'
 
 function Hero() {
     const {theme, toggleTheme} = useTheme();
+
+    const themeIcon = theme === 'light' ? sun : moon;
+    const twitterIcon = theme === 'light' ? twitterLight : twitterDark;
+    const githubIcon  = theme === 'light' ? githubLight : githubDark;
+    const linkedinIcon = theme === 'light' ? linkedinLight : linkedinDark;
 
     return (
         <section id='hero' className={styles.container}>
@@ -20,7 +29,7 @@ function Hero() {
                 src={heroImg} 
                 alt="Profic Pic" />
 
-                <img src={themeIcon} alt="Dark mode icon" />
+                <img src={themeIcon} alt="Dark mode icon" onClick={toggleTheme} />
                 
             </div>
 
@@ -33,7 +42,7 @@ function Hero() {
                 <h2>Full stack Web developer</h2>
                 <span>
                     <a href="https://x.com/ManavBhullar8" target='_blank'>
-                        <img src={xIcon} alt="Twitter Icon" />
+                        <img src={twitterIcon} alt="Twitter Icon" />
                     </a>
 
                     <a href="https://www.linkedin.com/in/manav-bhullar-a27a0b282" target='_blank'>
@@ -46,7 +55,7 @@ function Hero() {
                 </span>
 
                 <p>
-                    I am MANAV a Full stack web developer and a tech enthusiast.
+                    A Full stack web developer and a tech enthusiast.
                 </p>
 
                 <a href={CV} target='_blank'>
