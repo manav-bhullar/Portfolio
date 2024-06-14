@@ -7,8 +7,11 @@ import xIcon from '/Users/manav/Library/CloudStorage/OneDrive-thapar.edu/Codes/P
 import linkedinIcon from '/Users/manav/Library/CloudStorage/OneDrive-thapar.edu/Codes/Portfolio/Portfolio/src/assets/linkedin-light.svg'
 import githubIcon from '/Users/manav/Library/CloudStorage/OneDrive-thapar.edu/Codes/Portfolio/Portfolio/src/assets/github-light.svg'
 import CV from '/Users/manav/Library/CloudStorage/OneDrive-thapar.edu/Codes/Portfolio/Portfolio/src/assets/cv.pdf'
+import {useTheme} from '/Users/manav/Library/CloudStorage/OneDrive-thapar.edu/Codes/Portfolio/Portfolio/src/common/ThemeContext.jsx'
 
 function Hero() {
+    const {theme, toggleTheme} = useTheme();
+
     return (
         <section id='hero' className={styles.container}>
             <div className={styles.colorModeContainer}>
