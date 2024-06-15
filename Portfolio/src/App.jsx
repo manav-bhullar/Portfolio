@@ -1,6 +1,8 @@
 
 import './App.css'
 import Hero from '../sectoins/Hero/hero'
+import Projects from '../sectoins/Projects/Projects'
+
 
 function App() {
  
@@ -8,6 +10,7 @@ function App() {
   return (
     <>
     <Hero />
+    <Projects />
     </>
   )
 }
