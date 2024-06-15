@@ -3,6 +3,8 @@ import './App.css'
 import Hero from '../sectoins/Hero/hero'
 import Projects from '../sectoins/Projects/Projects'
 import Skills from '../sectoins/Skills/Skills'
+import Contact from '../sectoins/Contact/Contact'
+
 
 
 function App() {
@@ -13,6 +15,7 @@ function App() {
     <Hero />
     <Projects />
     <Skills />
+    <Contact />
     </>
   )
 }
