@@ -1,7 +1,7 @@
 .container {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content:space-evenly;
     gap: 20px;
     text-align: center;
     height: 100dvh;
@@ -10,7 +10,9 @@
   
     .hero {
       max-width: 200px;
+      padding-left: 100px;
     }
+
   
     span {
       display: flex;
@@ -22,9 +24,8 @@
   
         img {
           width: 30px;
-  
-          
         }
+        
       }
     }
   
@@ -55,21 +56,15 @@
       box-shadow: 0 2px 2px rgba(0, 0, 0, 0.25);
     }
   }
-  
-  .colorModeContainer {
-    position: relative;
 
-  }
-  
-  .colorMode {
-    position: absolute;
-    right: 0;
-    width: 25px;
-  }
-  
-  .colorMode:hover {
+  .themeIcon:hover {
     cursor: pointer;
+    transform: scale(1.1);
   }
+
+
+  
+
   
   .description {
     max-width: 24ch;
@@ -102,4 +97,18 @@
       width: 400px;
     }
   }
+}
+
+img:active {
+  transform: translateY(2px);
+}
+
+.themeIcon {
+  position: absolute;
+  right: 0;
+  width: 25px;
+}
+
+.themeIcon:hover {
+  cursor: pointer;
 }
