@@ -36,6 +36,10 @@ h1,h2,h3,p{
     color: var(--text-color);
     margin: 0;
     padding: 0;
+    animation: appear 0.5s linear;
+        animation-timeline: view();
+        animation-range: entry 0% cover 10%;
+        margin-bottom: 20px;
 }
 
 h2,h3,p{

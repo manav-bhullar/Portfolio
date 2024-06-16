@@ -21,7 +21,7 @@ function Contact() {
                     <textarea type="text" id="message" name="message" placeholder='Your Message' required></textarea>
                 </div>
 
-                <input type="submit" name="" id="" className='hiver btn' value="Submit" />
+                <input type="submit" name="" id="" className='hover btn' value="Submit" />
             </form>
         </section>
     )

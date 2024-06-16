@@ -1,44 +1,46 @@
-.container{
+.container {
     display: flex;
     flex-direction: column;
     text-align: center;
 
 }
 
-form{
+form {
     display: flex;
     flex-direction: column;
     gap: 30px;
 
 }
 
-textarea, input:not([type="submit"]){
+textarea,
+input:not([type="submit"]) {
     height: 50px;
     padding-left: 60px;
     width: 250px;
 
 }
 
-textarea{
-padding-top: 60px;
-resize: none;
-height: 250px;
+textarea {
+    padding-top: 60px;
+    resize: none;
+    height: 250px;
 }
 
-input, textarea{
+input,
+textarea {
     border-radius: 20px;
-    border:  #888 1px solid;
+    border: #888 1px solid;
     box-sizing: border-box;
     justify-self: center;
     background-color: var(--background-color);
 }
 
-::placeholder{
+::placeholder {
     color: var(--form-text-color);
 }
 
 
-input[type="submit"]{
+input[type="submit"] {
     background-color: var(--btn-color);
     color: var(--btn-text-color);
     border: none;
@@ -50,13 +52,30 @@ input[type="submit"]{
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
     transition: box-shadow 200ms ease-in-out, transform 200ms ease-in-out;
     margin: auto;
+    
 }
 
-input[type="submit"]:hover{
+input[type="submit"]:hover {
     transform: scale(1.05);
 }
 
-input[type="submit"]:active{
+input[type="submit"]:active {
     transform: translateY(2px);
     box-shadow: 0 2px 2px rgba(0, 0, 0, 0.25);
+}
+@keyframes appear {
+    from{
+        opacity: 0.5;
+        scale: 0.7;
+    }
+    to{
+        opacity: 1;
+        scale: 1;
+    }
+}
+    input, textarea{
+    animation: appear 0.5s linear;
+        animation-timeline: view();
+        animation-range: entry 0% cover 40%;
+        margin-bottom: 20px;
 }

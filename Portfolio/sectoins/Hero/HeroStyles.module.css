@@ -6,6 +6,7 @@
     text-align: center;
     height: 100dvh;
     min-height: 500px;
+    position: relative;
   
     .hero {
       max-width: 200px;
@@ -21,6 +22,8 @@
   
         img {
           width: 30px;
+  
+          
         }
       }
     }
@@ -55,6 +58,7 @@
   
   .colorModeContainer {
     position: relative;
+
   }
   
   .colorMode {

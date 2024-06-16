@@ -21,7 +21,7 @@ function Hero() {
     const githubIcon  = theme === 'light' ? githubLight : githubDark;
     const linkedinIcon = theme === 'light' ? linkedinLight : linkedinDark;
 
-    return (
+    return ( <>
         <section id='hero' className={styles.container}>
             <div className={styles.colorModeContainer}>
                 <img 
@@ -29,17 +29,17 @@ function Hero() {
                 src={heroImg} 
                 alt="Profic Pic" />
 
-                <img src={themeIcon} alt="Dark mode icon" onClick={toggleTheme} />
+                
                 
             </div>
-
+           
             <div className={styles.info}>
                 <h1>
                     Manav
                     <br />
                     Bhullar
                 </h1>
-                <h2>Full stack Web developer</h2>
+                <h2> ...</h2>
                 <span>
                     <a href="https://x.com/ManavBhullar8" target='_blank'>
                         <img src={twitterIcon} alt="Twitter Icon" />
@@ -62,7 +62,10 @@ function Hero() {
                     <button className='hover'>Resume</button>
                 </a>
             </div>
+
         </section>
+            <img src={themeIcon} style={{position: "absolute", top: "30px", right: "20px"}} alt="Dark mode icon" className='themeIcon' onClick={toggleTheme} />
+    </>
     );
 }
 

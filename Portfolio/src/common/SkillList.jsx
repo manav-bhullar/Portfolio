@@ -1,6 +1,9 @@
 import PropTypes from 'prop-types';
 
+
 function SkillList({ src, skill }){
+
+
     return (
         <span>
             <img src={src} alt="" />

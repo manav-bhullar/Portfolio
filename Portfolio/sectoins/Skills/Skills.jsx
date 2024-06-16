@@ -1,10 +1,18 @@
 import SkillList from "../../src/common/SkillList";
 import styles from "./SkillsStyles.module.css"
-import checkMark from "/Users/manav/Library/CloudStorage/OneDrive-thapar.edu/Codes/Portfolio/Portfolio/src/assets/checkmark-light.svg"
+import checkMarkDark from "/Users/manav/Library/CloudStorage/OneDrive-thapar.edu/Codes/Portfolio/Portfolio/src/assets/checkmark-dark.svg"
+import checkMarkLight from "/Users/manav/Library/CloudStorage/OneDrive-thapar.edu/Codes/Portfolio/Portfolio/src/assets/checkmark-light.svg"
+import {useTheme} from '/Users/manav/Library/CloudStorage/OneDrive-thapar.edu/Codes/Portfolio/Portfolio/src/common/ThemeContext.jsx'
 
 
 function Skills() {
+    
+    const {theme} = useTheme();
+
+    const checkMark = theme === 'light' ? checkMarkLight : checkMarkDark;
+    
     return (
+
         <section id="skills" className={styles.container} >
             <h1 className="sectionTitle">Skills</h1>
             <div className={styles.skillList}>
