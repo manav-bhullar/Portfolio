@@ -64,7 +64,7 @@ function Hero() {
             </div>
 
         </section>
-            <img src={themeIcon} style={{position: "absolute", top: "30px", right: "20px"}} alt="Dark mode icon" className='themeIcon' onClick={toggleTheme} />
+            <img src={themeIcon} style={{ width:"45px", position: "fixed", top: "30px", right: "20px"}} alt="Dark mode icon" className='themeIcon' onClick={toggleTheme} />
     </>
     );
 }
