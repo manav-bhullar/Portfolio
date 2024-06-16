@@ -1,4 +1,4 @@
-import styles from '/Users/manav/Library/CloudStorage/OneDrive-thapar.edu/Codes/Portfolio/sectoins/Contact/ContactStyles.module.css';
+import styles from "./ContactStyles.module.css"
 
 
 function Contact() {

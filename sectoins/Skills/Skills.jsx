@@ -1,8 +1,8 @@
 import SkillList from "../../src/common/SkillList";
 import styles from "./SkillsStyles.module.css"
-import checkMarkDark from "/Users/manav/Library/CloudStorage/OneDrive-thapar.edu/Codes/Portfolio/src/assets/checkmark-dark.svg"
-import checkMarkLight from "/Users/manav/Library/CloudStorage/OneDrive-thapar.edu/Codes/Portfolio/src/assets/checkmark-light.svg"
-import {useTheme} from '/Users/manav/Library/CloudStorage/OneDrive-thapar.edu/Codes/Portfolio/src/common/ThemeContext.jsx'
+import checkMarkDark from "../../src/assets/checkmark-dark.svg"
+import checkMarkLight from "../../src/assets/checkmark-light.svg"
+import {useTheme} from "../../src/common/ThemeContext"
 
 
 function Skills() {

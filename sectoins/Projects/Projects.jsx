@@ -1,7 +1,7 @@
 import React from "react";
-import styles from "/Users/manav/Library/CloudStorage/OneDrive-thapar.edu/Codes/Portfolio/sectoins/Projects/ProjectsStyles.module.css"
-import ticTactoe from "/Users/manav/Library/CloudStorage/OneDrive-thapar.edu/Codes/Portfolio/src/assets/tic-tac-toe.jpeg"
-import weather from "/Users/manav/Library/CloudStorage/OneDrive-thapar.edu/Codes/Portfolio/src/assets/weather.png"
+import styles from "./ProjectsStyles.module.css"
+import ticTactoe from "../../src/assets/tic-tac-toe.jpeg"
+import weather from "../../src/assets/weather.png"
 import ProjectCard from "../../src/common/ProjectCard";
 
 function Projects() {
