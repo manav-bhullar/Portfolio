@@ -1,17 +1,17 @@
 
 
 import styles from './HeroStyles.module.css'
-import sun from '/Users/manav/Library/CloudStorage/OneDrive-thapar.edu/Codes/Portfolio/Portfolio/src/assets/sun.svg'
-import moon from "/Users/manav/Library/CloudStorage/OneDrive-thapar.edu/Codes/Portfolio/Portfolio/src/assets/moon.svg"
-import twitterLight from '/Users/manav/Library/CloudStorage/OneDrive-thapar.edu/Codes/Portfolio/Portfolio/src/assets/twitter-light.svg'
-import twitterDark from '/Users/manav/Library/CloudStorage/OneDrive-thapar.edu/Codes/Portfolio/Portfolio/src/assets/twitter-dark.svg'
-import githubLight from '/Users/manav/Library/CloudStorage/OneDrive-thapar.edu/Codes/Portfolio/Portfolio/src/assets/github-light.svg'
-import githubDark from '/Users/manav/Library/CloudStorage/OneDrive-thapar.edu/Codes/Portfolio/Portfolio/src/assets/github-dark.svg'
-import linkedinLight from '/Users/manav/Library/CloudStorage/OneDrive-thapar.edu/Codes/Portfolio/Portfolio/src/assets/linkedin-light.svg'
-import linkedinDark from '/Users/manav/Library/CloudStorage/OneDrive-thapar.edu/Codes/Portfolio/Portfolio/src/assets/linkedin-dark.svg'
-import heroImg from "/Users/manav/Library/CloudStorage/OneDrive-thapar.edu/Codes/Portfolio/Portfolio/src/assets/My first design 4 (3).png"
-import CV from '/Users/manav/Library/CloudStorage/OneDrive-thapar.edu/Codes/Portfolio/Portfolio/src/assets/cv.pdf'
-import {useTheme} from '/Users/manav/Library/CloudStorage/OneDrive-thapar.edu/Codes/Portfolio/Portfolio/src/common/ThemeContext.jsx'
+import sun from '/Users/manav/Library/CloudStorage/OneDrive-thapar.edu/Codes/Portfolio/src/assets/sun.svg'
+import moon from "/Users/manav/Library/CloudStorage/OneDrive-thapar.edu/Codes/Portfolio/src/assets/moon.svg"
+import twitterLight from '/Users/manav/Library/CloudStorage/OneDrive-thapar.edu/Codes/Portfolio/src/assets/twitter-light.svg'
+import twitterDark from '/Users/manav/Library/CloudStorage/OneDrive-thapar.edu/Codes/Portfolio/src/assets/twitter-dark.svg'
+import githubLight from '/Users/manav/Library/CloudStorage/OneDrive-thapar.edu/Codes/Portfolio/src/assets/github-light.svg'
+import githubDark from '/Users/manav/Library/CloudStorage/OneDrive-thapar.edu/Codes/Portfolio/src/assets/github-dark.svg'
+import linkedinLight from '/Users/manav/Library/CloudStorage/OneDrive-thapar.edu/Codes/Portfolio/src/assets/linkedin-light.svg'
+import linkedinDark from '/Users/manav/Library/CloudStorage/OneDrive-thapar.edu/Codes/Portfolio/src/assets/linkedin-dark.svg'
+import heroImg from "/Users/manav/Library/CloudStorage/OneDrive-thapar.edu/Codes/Portfolio/src/assets/My first design 4 (3).png"
+import CV from '/Users/manav/Library/CloudStorage/OneDrive-thapar.edu/Codes/Portfolio/src/assets/cv.pdf'
+import {useTheme} from '/Users/manav/Library/CloudStorage/OneDrive-thapar.edu/Codes/Portfolio/src/common/ThemeContext.jsx'
 
 function Hero() {
     const {theme, toggleTheme} = useTheme();

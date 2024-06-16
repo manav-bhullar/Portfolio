@@ -1,4 +1,4 @@
-import styles from "/Users/manav/Library/CloudStorage/OneDrive-thapar.edu/Codes/Portfolio/Portfolio/sectoins/Footer/FooterStyles.module.css";
+import styles from "/Users/manav/Library/CloudStorage/OneDrive-thapar.edu/Codes/Portfolio/sectoins/Footer/FooterStyles.module.css";
 
 function Footer() {
     return (
