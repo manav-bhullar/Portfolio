@@ -10,7 +10,7 @@ import githubDark from "../../src/assets/github-dark.svg"
 import linkedinLight from "../../src/assets/linkedin-light.svg"
 import linkedinDark from "../../src/assets/linkedin-dark.svg"
 import heroImg from "../../src/assets/My first design 4 (3).png"
-import CV from "../../src/assets/cv.pdf"
+import CV from "../../src/assets/manav_bhullar (2).pages"
 import {useTheme} from "../../src/common/ThemeContext"
 
 function Hero() {
