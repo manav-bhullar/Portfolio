@@ -24,6 +24,8 @@ section{
                 animation-timeline: view();
                 animation-range: entry 0% cover 40%;
                 margin-bottom: 20px;
+                width: 300px;
+                height: 300px;
             
             }
         }
