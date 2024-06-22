@@ -1,0 +1,28 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.sectiontitle{
+    margin-bottom: 30px;
+
+    
+}
+
+
+
+
+label{
+    height: 50px;
+    background-color: var(--background-color);
+    justify-self: center;
+    cursor: pointer;
+}
+
+ p{
+
+    margin-top:    20px ;
+    margin-right: 40px;
+ }
+

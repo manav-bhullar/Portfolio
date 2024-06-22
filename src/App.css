@@ -137,3 +137,15 @@ p {
 
 
   
+.starInput{
+    display: none;
+}
+
+.rating-container{
+    display: flex;
+    flex-direction: row !important;
+    gap: 0 !important;
+    justify-content: center;
+    
+    
+ }
