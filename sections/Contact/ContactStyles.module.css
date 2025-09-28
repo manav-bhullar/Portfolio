@@ -2,45 +2,48 @@
     display: flex;
     flex-direction: column;
     text-align: center;
-
+    padding: 20px;
 }
 
-form {
+.contactForm {
     display: flex;
     flex-direction: column;
     gap: 30px;
-
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
 }
 
-textarea,
-input:not([type="submit"]) {
+.formGroup {
+    display: flex;
+    flex-direction: column;
+}
+
+.formInput,
+.formTextarea {
     height: 50px;
-    padding-left: 60px;
-    width: 250px;
-
-}
-
-textarea {
-    padding-top: 60px;
-    resize: none;
-    height: 250px;
-}
-
-input,
-textarea {
+    padding: 0 20px;
     border-radius: 20px;
-    border: #888 1px solid;
+    border: 1px solid #888;
     box-sizing: border-box;
-    justify-self: center;
     background-color: var(--background-color);
+    animation: appear 0.5s linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 20%;
 }
 
-::placeholder {
+.formTextarea {
+    height: 250px;
+    padding-top: 20px;
+    resize: none;
+}
+
+.formInput::placeholder,
+.formTextarea::placeholder {
     color: var(--form-text-color);
 }
 
-
-input[type="submit"] {
+.submitBtn {
     background-color: var(--btn-color);
     color: var(--btn-text-color);
     border: none;
@@ -52,47 +55,37 @@ input[type="submit"] {
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
     transition: box-shadow 200ms ease-in-out, transform 200ms ease-in-out;
     margin: auto;
-    
+    cursor: pointer;
 }
 
-input[type="submit"]:hover {
+.submitBtn:hover {
     transform: scale(1.05);
 }
 
-input[type="submit"]:active {
+.submitBtn:active {
     transform: translateY(2px);
     box-shadow: 0 2px 2px rgba(0, 0, 0, 0.25);
 }
+
 @keyframes appear {
-    from{
+    from {
         opacity: 0.5;
         scale: 0.7;
     }
-    to{
+    to {
         opacity: 1;
         scale: 1;
     }
 }
-    input, textarea{
-    animation: appear 0.5s linear;
-        animation-timeline: view();
-        animation-range: entry 0% cover 20%;
-        margin-bottom: 20px;
-}
 
-@media (width>=800px){
-    textarea,input:not([type="submit"]){
-        width: 600px;
+@media (min-width: 800px) {
+    .formInput,
+    .formTextarea {
+        width: 100%;
         font-size: 20px;
     }
-    form{
-        gap: 40px;
-    
-    }
-}
 
-@media (width>=1400px){
-      textArea,input:not([type="submit"]){
-        width: 800px;
+    .contactForm {
+        gap: 40px;
     }
 }

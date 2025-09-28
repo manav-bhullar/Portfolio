@@ -1,0 +1,105 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 20px;
+}
+
+.suggestionsForm {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.ratingContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.rateText {
+  margin: 0;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.starInput {
+  display: none;
+}
+
+.star {
+  cursor: pointer;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+}
+
+.formTextarea {
+  height: 150px;
+  padding: 20px;
+  border-radius: 20px;
+  border: 1px solid #888;
+  box-sizing: border-box;
+  background-color: var(--background-color);
+  resize: none;
+  animation: appear 0.5s linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 20%;
+}
+
+.formTextarea::placeholder {
+  color: var(--form-text-color);
+}
+
+.submitBtn {
+  background-color: var(--btn-color);
+  color: var(--btn-text-color);
+  border: none;
+  border-radius: 20px;
+  width: 126px;
+  height: 50px;
+  font-size: 20px;
+  font-weight: bold;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  transition: box-shadow 200ms ease-in-out, transform 200ms ease-in-out;
+  margin: auto;
+  cursor: pointer;
+}
+
+.submitBtn:hover {
+  transform: scale(1.05);
+}
+
+.submitBtn:active {
+  transform: translateY(2px);
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.25);
+}
+
+@keyframes appear {
+    from {
+        opacity: 0.5;
+        scale: 0.7;
+    }
+    to {
+        opacity: 1;
+        scale: 1;
+    }
+}
+
+@media (min-width: 800px) {
+    .formTextarea {
+        width: 100%;
+        font-size: 20px;
+    }
+
+    .suggestionsForm {
+        gap: 40px;
+    }
+}
