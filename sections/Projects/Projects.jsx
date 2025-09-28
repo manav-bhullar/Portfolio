@@ -1,26 +1,25 @@
-import styles from "./ProjectsStyles.module.css";
-import ticTacToe from "../../src/assets/tic-tac-toe.jpeg";
-import weather from "../../src/assets/weather.png";
-import ProjectCard from "../../src/common/ProjectCard";
-import underConstruction from "../../src/assets/underConstruction.png";
+import styles from './ProjectsStyles.module.css';
+import ProjectCard from '../../src/common/ProjectCard';
+import underConstruction from '../../src/assets/underConstruction.png';
+import { FaGamepad, FaCloudSun } from 'react-icons/fa';
 
 const projects = [
   {
-    src: ticTacToe,
-    link: "https://github.com/manav-bhullar/Tic-Tac-Toe.git",
-    h3: "Tic Tac Toe",
-    p: "Game",
+    icon: <FaGamepad size={100} />,
+    link: 'https://github.com/manav-bhullar/Tic-Tac-Toe.git',
+    h3: 'Tic Tac Toe',
+    p: 'Game',
   },
   {
-    src: weather,
-    link: "https://github.com/manav-bhullar/weather.git",
-    h3: "SunDial",
-    p: "A Weather app",
+    icon: <FaCloudSun size={100} />,
+    link: 'https://github.com/manav-bhullar/weather.git',
+    h3: 'SunDial',
+    p: 'A Weather app',
   },
   {
-    src: underConstruction,
-    h3: "Under Construction",
-    p: "More projects coming soon...",
+    icon: <img src={underConstruction} alt="Under Construction" />,
+    h3: 'Under Construction',
+    p: 'More projects coming soon...',
   },
 ];
 
@@ -32,7 +31,7 @@ function Projects() {
         {projects.map((project, index) => (
           <ProjectCard
             key={index}
-            src={project.src}
+            icon={project.icon}
             link={project.link}
             h3={project.h3}
             p={project.p}

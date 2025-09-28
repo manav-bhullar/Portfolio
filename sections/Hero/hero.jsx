@@ -1,15 +1,8 @@
 import styles from './HeroStyles.module.css';
-import sun from '../../src/assets/sun.svg';
-import moon from '../../src/assets/moon.svg';
-import twitterLight from '../../src/assets/twitter-light.svg';
-import twitterDark from '../../src/assets/twitter-dark.svg';
-import githubLight from '../../src/assets/github-light.svg';
-import githubDark from '../../src/assets/github-dark.svg';
-import linkedinLight from '../../src/assets/linkedin-light.svg';
-import linkedinDark from '../../src/assets/linkedin-dark.svg';
 import heroImg from '../../src/assets/My first design 4 (3).png';
 import CV from '../../src/assets/cv.pdf';
 import { useTheme } from '../../src/common/ThemeContext';
+import { FaSun, FaMoon, FaTwitter, FaLinkedin, FaGithub } from 'react-icons/fa';
 
 const socialLinks = {
   twitter: 'https://x.com/ManavBhullar8',
@@ -17,24 +10,9 @@ const socialLinks = {
   github: 'https://github.com/manav-bhullar',
 };
 
-const icons = {
-  light: {
-    twitter: twitterLight,
-    github: githubLight,
-    linkedin: linkedinLight,
-    theme: sun,
-  },
-  dark: {
-    twitter: twitterDark,
-    github: githubDark,
-    linkedin: linkedinDark,
-    theme: moon,
-  },
-};
-
 function Hero() {
   const { theme, toggleTheme } = useTheme();
-  const themeIcons = icons[theme];
+  const isDarkMode = theme === 'dark';
 
   return (
     <section id="hero" className={styles.container}>
@@ -49,15 +27,15 @@ function Hero() {
           Bhullar
         </h1>
         <h2>A Full stack web developer and a tech enthusiast.</h2>
-        <span>
+        <span className={styles.socialIcons}>
           <a href={socialLinks.twitter} target="_blank" rel="noopener noreferrer">
-            <img src={themeIcons.twitter} alt="Twitter Icon" />
+            <FaTwitter size={30} />
           </a>
           <a href={socialLinks.linkedin} target="_blank" rel="noopener noreferrer">
-            <img src={themeIcons.linkedin} alt="Linkedin Icon" />
+            <FaLinkedin size={30} />
           </a>
           <a href={socialLinks.github} target="_blank" rel="noopener noreferrer">
-            <img src={themeIcons.github} alt="Github Icon" />
+            <FaGithub size={30} />
           </a>
         </span>
 
@@ -67,11 +45,7 @@ function Hero() {
       </div>
 
       <div className={styles.themeIconContainer} onClick={toggleTheme}>
-        <img
-          className={styles.themeIcon}
-          src={themeIcons.theme}
-          alt="Dark mode icon"
-        />
+        {isDarkMode ? <FaSun size={30} /> : <FaMoon size={30} />}
       </div>
     </section>
   );

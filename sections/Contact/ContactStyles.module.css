@@ -1,91 +1,94 @@
 .container {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    padding: 20px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 20px;
+  background-color: var(--background);
+  color: var(--text);
 }
 
 .contactForm {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-    width: 100%;
-    max-width: 800px;
-    margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 .formGroup {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .formInput,
 .formTextarea {
-    height: 50px;
-    padding: 0 20px;
-    border-radius: 20px;
-    border: 1px solid #888;
-    box-sizing: border-box;
-    background-color: var(--background-color);
-    animation: appear 0.5s linear;
-    animation-timeline: view();
-    animation-range: entry 0% cover 20%;
+  height: 50px;
+  padding: 0 20px;
+  border-radius: 20px;
+  border: 1px solid var(--secondary);
+  box-sizing: border-box;
+  background-color: var(--background);
+  color: var(--text);
+  animation: appear 0.5s linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 20%;
 }
 
 .formTextarea {
-    height: 250px;
-    padding-top: 20px;
-    resize: none;
+  height: 250px;
+  padding-top: 20px;
+  resize: none;
 }
 
 .formInput::placeholder,
 .formTextarea::placeholder {
-    color: var(--form-text-color);
+  color: var(--text);
 }
 
 .submitBtn {
-    background-color: var(--btn-color);
-    color: var(--btn-text-color);
-    border: none;
-    border-radius: 20px;
-    width: 126px;
-    height: 50px;
-    font-size: 20px;
-    font-weight: bold;
-    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-    transition: box-shadow 200ms ease-in-out, transform 200ms ease-in-out;
-    margin: auto;
-    cursor: pointer;
+  background-color: var(--primary);
+  color: var(--onPrimary);
+  border: none;
+  border-radius: 20px;
+  width: 126px;
+  height: 50px;
+  font-size: 20px;
+  font-weight: bold;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  transition: box-shadow 200ms ease-in-out, transform 200ms ease-in-out;
+  margin: auto;
+  cursor: pointer;
 }
 
 .submitBtn:hover {
-    transform: scale(1.05);
+  transform: scale(1.05);
 }
 
 .submitBtn:active {
-    transform: translateY(2px);
-    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.25);
+  transform: translateY(2px);
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.25);
 }
 
 @keyframes appear {
-    from {
-        opacity: 0.5;
-        scale: 0.7;
-    }
-    to {
-        opacity: 1;
-        scale: 1;
-    }
+  from {
+    opacity: 0.5;
+    scale: 0.7;
+  }
+  to {
+    opacity: 1;
+    scale: 1;
+  }
 }
 
 @media (min-width: 800px) {
-    .formInput,
-    .formTextarea {
-        width: 100%;
-        font-size: 20px;
-    }
+  .formInput,
+  .formTextarea {
+    width: 100%;
+    font-size: 20px;
+  }
 
-    .contactForm {
-        gap: 40px;
-    }
+  .contactForm {
+    gap: 40px;
+  }
 }
