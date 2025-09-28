@@ -1,31 +1,8 @@
-:root {
-    --background-color: #fff;
-    --btn-color: #0987f2;
-    --btn-text-color: #fff;
-    --project-card-bg: #ffffff00;
-    --text-color: #222;
-    --form-text-color: #555;
-    --footer-text-color: #888;
-    --p-color: #222222d2;
-}
-
-[data-theme="dark"] {
-    --background-color: #222;
-    --btn-color: #fff;
-    --btn-text-color: #222;
-    --project-card-color: #fff;
-    --text-color: #fff;
-    --form-text-color: #fff;
-    --footer-text-color: #bbb;
-    --p-color: #ffffffd9;
-}
-
 body {
-    background-color: var(--background-color);
+    background-color: var(--background);
     display: flex;
     justify-content: center;
     margin: 0 auto 60px;
-
 }
 
 #root {
@@ -38,7 +15,6 @@ h1,
 h2,
 h3,
 p {
-    color: var(--text-color);
     margin: 0;
     padding: 0;
     animation: appear 0.5s linear;
@@ -68,14 +44,11 @@ h1 {
     font-optical-sizing: auto;
     font-weight: 900;
     font-style: normal;
-
 }
 
 p {
     font-size: 16px;
-    font-weight: 300 ;
-    color: var(--p-color);
-    
+    font-weight: 300;
 }
 
 .sectionTitle {
@@ -91,61 +64,39 @@ p {
         opacity: 0.5;
         scale: 0.5;
     }
-
     to {
         opacity: 1;
         scale: 1;
     }
 }
 
-@media (width >=800px) {
+@media (width >= 800px) {
     #root {
         gap: 100px;
     }
-
     h1 {
         font-size: 48px;
     }
-
     h2,
     h3 {
         font-size: 24px;
     }
-
     p {
         font-size: 20px;
     }
-
     .sectionTitle {
         margin-bottom: 60px;
     }
 }
 
-@media (width >=1400px) {
+@media (width >= 1400px) {
     #root {
         gap: 200px;
     }
-
     h1 {
         font-size: 48px;
     }
-
     .sectionTitle {
         margin-bottom: 75px;
     }
 }
-
-
-  
-.starInput{
-    display: none;
-}
-
-.rating-container{
-    display: flex;
-    flex-direction: row !important;
-    gap: 0 !important;
-    justify-content: center;
-    
-    
- }

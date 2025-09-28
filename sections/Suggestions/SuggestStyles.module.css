@@ -3,6 +3,8 @@
   flex-direction: column;
   text-align: center;
   padding: 20px;
+  background-color: var(--background);
+  color: var(--text);
 }
 
 .suggestionsForm {
@@ -34,6 +36,11 @@
 
 .star {
   cursor: pointer;
+  color: #e4e5e9;
+}
+
+.star.active {
+  color: #ffc107;
 }
 
 .formGroup {
@@ -45,9 +52,10 @@
   height: 150px;
   padding: 20px;
   border-radius: 20px;
-  border: 1px solid #888;
+  border: 1px solid var(--secondary);
   box-sizing: border-box;
-  background-color: var(--background-color);
+  background-color: var(--background);
+  color: var(--text);
   resize: none;
   animation: appear 0.5s linear;
   animation-timeline: view();
@@ -55,12 +63,12 @@
 }
 
 .formTextarea::placeholder {
-  color: var(--form-text-color);
+  color: var(--text);
 }
 
 .submitBtn {
-  background-color: var(--btn-color);
-  color: var(--btn-text-color);
+  background-color: var(--primary);
+  color: var(--onPrimary);
   border: none;
   border-radius: 20px;
   width: 126px;
@@ -83,23 +91,23 @@
 }
 
 @keyframes appear {
-    from {
-        opacity: 0.5;
-        scale: 0.7;
-    }
-    to {
-        opacity: 1;
-        scale: 1;
-    }
+  from {
+    opacity: 0.5;
+    scale: 0.7;
+  }
+  to {
+    opacity: 1;
+    scale: 1;
+  }
 }
 
 @media (min-width: 800px) {
-    .formTextarea {
-        width: 100%;
-        font-size: 20px;
-    }
+  .formTextarea {
+    width: 100%;
+    font-size: 20px;
+  }
 
-    .suggestionsForm {
-        gap: 40px;
-    }
+  .suggestionsForm {
+    gap: 40px;
+  }
 }
