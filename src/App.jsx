@@ -1,11 +1,11 @@
 
 import './App.css'
-import Hero from '../sectoins/Hero/hero'
-import Projects from '../sectoins/Projects/Projects'
-import Skills from '../sectoins/Skills/Skills'
-import Contact from '../sectoins/Contact/Contact'
-import Footer from '../sectoins/Footer/Footer'
-import Suggest from "../sectoins/Suggestions/suggest"
+import Hero from '../sections/Hero/hero'
+import Projects from '../sections/Projects/Projects'
+import Skills from '../sections/Skills/Skills'
+import Contact from '../sections/Contact/Contact'
+import Footer from '../sections/Footer/Footer'
+import Suggest from "../sections/Suggestions/Suggest"
 
 
 
